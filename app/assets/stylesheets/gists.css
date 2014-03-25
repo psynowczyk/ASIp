@@ -1,4 +1,4 @@
-@font-face			{font-family: opensansreg; src: url(OpenSans-Regular.ttf); font-weight: normal; font-smooth: always; -webkit-font-smoothing: antialiased !important;}
+@font-face			{font-family: opensansreg; src: url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'); font-weight: normal; font-smooth: always; -webkit-font-smoothing: antialiased !important;}
 body				{font: normal 18px opensansreg; margin: 5px auto; max-width: 960px; background: #e6e6e6 url(bgs.jpg) repeat; color: #404040; text-shadow: 0px 1px 0px #ffffff;}
 
 a					{text-decoration: none; color: #630f99; transition: color .3s; -webkit-transition: color .3s;}

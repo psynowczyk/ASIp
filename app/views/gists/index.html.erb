@@ -1,0 +1,27 @@
+<h1>Listing gists</h1>
+<hr></hr>
+<%= will_paginate %>
+<table name="gistslist">
+  <tr>
+    <td>Lang</td>
+    <td>Snippet</td>
+    <td>Description</td>
+    <td>Actions</td>
+  </tr>
+  <% @gists.each do |gist| %>
+    <tr>
+      <td><%= gist.lang %></td>
+      <td><%= gist.snippet.squish[0,53]+"... " %></td>
+      <td><%= gist.description %></td>
+      <td name="actions">
+        <%= link_to 'Show', gist %>
+        <%= link_to 'Edit', edit_gist_path(gist) %>
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New Gist', new_gist_path %>

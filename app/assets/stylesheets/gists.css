@@ -1,0 +1,22 @@
+@font-face			{font-family: opensansreg; src: url(OpenSans-Regular.ttf); font-weight: normal; font-smooth: always; -webkit-font-smoothing: antialiased !important;}
+body				{font: normal 18px opensansreg; margin: 5px auto; max-width: 960px; background: #e6e6e6 url(bgs.jpg) repeat; color: #404040; text-shadow: 0px 1px 0px #ffffff;}
+
+a					{text-decoration: none; color: #630f99; transition: color .3s; -webkit-transition: color .3s;}
+a:hover				{color: #1167b3;}
+h1					{font-size: 44px; margin: 0;}
+hr					{margin: -7px 0 15px 0; width: 100%; height: 1px; border: none; background: #cccccc; box-shadow: 0px 1px 0px #f7f7f7;}
+
+table					{width: 100%; border-collapse: collapse;}
+table, tr, td			{border: 1px solid #cccccc;}
+	tr					{font-size: 14px; line-height: 36px; background: #f0f0f0;}
+	tr:first-child		{font-size: 18px; line-height: 44px; background: #f7f7f7;}
+		td				{padding: 0 6px; box-shadow: inset 0px 1px 0px #f7f7f7;}
+		td[name="actions"] a	{padding-right: 8px;}
+		td[name="actions"] a:last-child	{padding-right: 0;}
+
+table[name="gistslist"] td:nth-child(1)		{width: 10%;}
+table[name="gistslist"] td:nth-child(2)		{width: 50%;}
+table[name="gistslist"] td:nth-child(3)		{width: 24%;}
+table[name="gistslist"] td:nth-child(4)		{width: 16%;}
+
+textarea			{min-width: 540px; max-width: 960px; min-height: 100px; max-height: 500px;}

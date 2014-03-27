@@ -11,6 +11,7 @@ Zmiany gemów:
 
 Wykonane zadania:
 * Zmiana widoków
+* Zmiana arkusza stylów
 * Zwiększone pole textarea w formularzu
 * Zaimplementowane kolorowanie składni
 * Zaimplementowane Infinite Scrolling

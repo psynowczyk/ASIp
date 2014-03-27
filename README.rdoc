@@ -2,4 +2,17 @@
 
 Aplikacja "My Gists" na zaliczenie laboratoriów z Architektury Serwisów Internetowych.
 
+Użyte gemy:
+* gem 'pygments.rb'
+* gem 'will_paginate', '~> 3.0.5'
+
+Zmiany gemów:
+* gem 'sqlite3', '1.3.8' -> gem 'pg', '0.15.1'
+
+Wykonane zadania:
+* Zmiana widoków
+* Zwiększone pole textarea w formularzu
+* Zaimplementowane kolorowanie składni
+* Zaimplementowane Infinite Scrolling
+
 Live demo: http://psgists.herokuapp.com/gists

@@ -8,8 +8,8 @@ hr					{margin: -7px 0 15px 0; width: 100%; height: 1px; border: none; backgroun
 
 table					{width: 100%; border-collapse: collapse;}
 table, tr, td			{border: 1px solid #cccccc;}
-	tr					{font-size: 14px; line-height: 36px; background: #f0f0f0;}
-	tr:first-child		{font-size: 18px; line-height: 44px; background: #f7f7f7;}
+	tr					{font-size: 14px; line-height: 40px; background: #f0f0f0;}
+	tr:first-child		{font-size: 18px; line-height: 50px; background: #f7f7f7;}
 		td				{padding: 0 6px; box-shadow: inset 0px 1px 0px #f7f7f7;}
 		td[name="actions"] a	{padding-right: 8px;}
 		td[name="actions"] a:last-child	{padding-right: 0;}

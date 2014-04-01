@@ -1,6 +1,30 @@
 <h1>Listing gists</h1>
 <hr></hr>
-<%= will_paginate %>
+<%= link_to 'New Gist', new_gist_path %>
+<div>
+  <%= form_tag @gist, :method => 'get' do %>
+    <div class="input-group">
+      <span class="input-group-addon">Snippet</span>
+      <%= text_field_tag :snippet_search, params[:snippet_search], class: "form-control", placeholder: "Empty for all characters" %>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">Description</span>
+      <%= text_field_tag :desc_search, params[:desc_search], class: "form-control", placeholder: "Empty for all characters" %>
+    </div>
+    <div class="input-group col-sm-3">
+      <span class="input-group-addon">Language</span>
+      <%= select_tag :lang_search, options_for_select(Pygments.lexers.sort.map{|key, value| [ value[:name], value[:aliases][0] ] }), include_blank: true, class: "form-control" %>
+    </div>
+    <div class="input-group">
+      <div class="btn-group btn-group-lg">
+        <%= submit_tag "Submit", :type => "submit", class: "btn btn-info" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div id="infinite-scrolling">
+  <%= will_paginate @gists %>
+</div>
 <table name="gistslist">
   <tr>
     <td>Lang</td>
@@ -8,20 +32,10 @@
     <td>Description</td>
     <td>Actions</td>
   </tr>
-  <% @gists.each do |gist| %>
-    <tr>
-      <td><%= gist.lang %></td>
-      <td><%= gist.snippet.squish[0,53]+"... " %></td>
-      <td><%= gist.description %></td>
-      <td name="actions">
-        <%= link_to 'Show', gist %>
-        <%= link_to 'Edit', edit_gist_path(gist) %>
-        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </td>
-    </tr>
-  <% end %>
+  <div id="my-gists">
+    <%= render @gists %>
+  </div>
 </table>
-
-<br>
-
-<%= link_to 'New Gist', new_gist_path %>
+<div id="infinite-scrolling">
+    <%= will_paginate @gists %>
+</div>

@@ -1,15 +1,16 @@
-<p id="notice"><%= notice %></p>
-<p>
+<div class="field" id="notice">
+	<%= notice %>
+</div>
+<div class="field">
   <strong>Lang:</strong>
   <%= @gist.lang %>
-</p>
-<p>
+</div>
+<div class="field">
   <strong>Description:</strong>
   <%= @gist.description %>
-</p>
-<p>
-  <strong>Snippet:</strong>
-</p>
-<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
-<%= link_to 'Edit', edit_gist_path(@gist) %> |
-<%= link_to 'Back', gists_path %>
+</div>
+<div class="field" name="wholecode">
+	<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+</div>
+<%= link_to 'Edit', edit_gist_path(@gist), class: "button", style: "margin-right: 1px;" %>
+<%= link_to 'Back', gists_path, class: "button" %>

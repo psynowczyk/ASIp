@@ -1,10 +1,9 @@
-<tr>
-  <td><%= gist.lang %></td>
-  <td><%= raw Pygments.highlight(gist.snippet[0,22]+"...", lexer: gist.lang) %></td>
-  <td><%= gist.description %></td>
-  <td name="actions">
-    <%= link_to 'Show', gist %>
-    <%= link_to 'Edit', edit_gist_path(gist) %>
-    <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </td>
-</tr>
+<div class="drow" name="gistbox">
+  <div class="dcol" onclick="window.document.location='/gists/<%= gist.id %>'"><%= gist.lang %></div>
+  <div class="dcol" onclick="window.document.location='/gists/<%= gist.id %>'"><%= raw Pygments.highlight(gist.snippet[0,43]+"...", lexer: gist.lang) %></div>
+  <div class="dcol" onclick="window.document.location='/gists/<%= gist.id %>'"><%= gist.description %></div>
+  <div class="dcol">
+    <%= link_to '', edit_gist_path(gist), class: "imglink", name: "edit", title: "Edit" %>
+    <%= link_to '', gist, method: :delete, data: { confirm: 'Are you sure?' }, class: "imglink", name: "del", title: "Delete" %>
+  </div>
+</div>

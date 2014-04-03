@@ -1,6 +1,7 @@
 == README
 
-Aplikacja "My Gists" na zaliczenie laboratoriów z Architektury Serwisów Internetowych.
+Projekt "My Gists" na zaliczenie laboratoriów z Architektury Serwisów Internetowych.
+Aplikacja służy do zapisywania wycinków kodów dowolnego języka programowania.
 
 Użyte gemy:
 * gem 'pygments.rb'

@@ -10,10 +10,11 @@ Zmiany gemów:
 * gem 'sqlite3', '1.3.8' -> gem 'pg', '0.15.1'
 
 Wykonane zadania:
-* Zmiana widoków
-* Zmiana arkusza stylów
+* Dodany widok częściowy dla kolejnych rekordów listy
+* Zmiana arkusza stylów (responsywność aplikacji)
 * Zwiększone pole textarea w formularzu
-* Zaimplementowane kolorowanie składni
 * Zaimplementowane Infinite Scrolling
+* Zaimplementowane wyszukiwanie rekordów
+* Wypełnienie bazy danych przykładowymi rekordami
 
 Live demo: http://psgists.herokuapp.com/gists

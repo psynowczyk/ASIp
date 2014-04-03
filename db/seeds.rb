@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+50.times {
+	|i|
+	Bean.create(snippet: "public void main(){ System.out.println('Hello world'); }", lang: "java", description: "Java Hello World #{i}")
+}

@@ -5,7 +5,7 @@ input[type="text"]		{padding: 0 0 0 5px; height: 25px; line-height: 25px; border
 select						{padding: 4px 1px 4px 2px; width: 184px; background: #ffffff; border: 1px solid #cccccc; border-radius: 2px;}
 pre							{margin: 0;}
 
-body							{font: normal 18px opensansreg; margin: 5px auto; padding: 0 1px; max-width: 960px; background: #e6e6e6 url(bgs.jpg) repeat; color: #404040; text-shadow: 0px 1px 0px #ffffff;}
+body							{font: normal 18px opensansreg; margin: 5px auto; padding: 0 1px; max-width: 960px; background: #e6e6e6 url(http://www.synowczyk.cal24.pl/mygists/images/bgs.jpg) repeat; color: #404040; text-shadow: 0px 1px 0px #ffffff;}
 	div.searchbox			{width: 100%;}
 		div.searchbox .inprow				{width: 100%; height: 25px; margin-bottom: 10px;}
 		div.searchbox .inprow:last-child	{margin-bottom: 5px; height: 38px;}
@@ -21,15 +21,15 @@ body							{font: normal 18px opensansreg; margin: 5px auto; padding: 0 1px; max
 		div.pagination em						{float: left; margin: 1px 1px 0 0; padding: 0 10px; height: 28px; line-height: 28px; background: #404040; text-align: center; border-radius: 2px; color: #ffffff; text-shadow: none; cursor: default;}
 		div.pagination span					{float: left; margin: 1px 1px 0 0; padding: 0 10px; height: 28px; line-height: 28px; background: #404040; text-align: center; border-radius: 2px; color: #ffffff; text-shadow: none; cursor: default;}
 	div.field									{width: 100%;}
-	div.field[name="wholecode"]			{font-size: 13px; padding: 0 10px; width: calc(100% - 22px); max-width: calc(100% - 22px); overflow: auto; background: #f7f7f7 url(codebg.jpg) repeat; border: 1px solid #cccccc; border-radius: 2px;}
+	div.field[name="wholecode"]			{font-size: 13px; padding: 0 10px; width: calc(100% - 22px); max-width: calc(100% - 22px); overflow: auto; background: #f7f7f7 url(http://www.synowczyk.cal24.pl/mygists/images/codebg.jpg) repeat; border: 1px solid #cccccc; border-radius: 2px;}
 
 a								{text-decoration: none; color: #630f99; transition: color .3s, background .3s; -webkit-transition: color .3s, background .3s;}
 a:hover						{color: #1167b3;}
 a.imglink					{float: left; padding: 0; margin: 1px 0 0 1px; width: calc(50% - 1px); height: 38px;}
-a.imglink[name="edit"]	{background: #a519ff url(icon_edit.png) no-repeat; background-position: center center;}
-a.imglink[name="edit"]:hover	{background: #1476cc url(icon_edit.png) no-repeat; background-position: center center;}
-a.imglink[name="del"]	{background: #f22424 url(icon_remove.png) no-repeat; background-position: center center;}
-a.imglink[name="del"]:hover	{background: #1476cc url(icon_remove.png) no-repeat; background-position: center center;}
+a.imglink[name="edit"]	{background: #a519ff url(http://www.synowczyk.cal24.pl/mygists/images/icon_edit.png) no-repeat; background-position: center center;}
+a.imglink[name="edit"]:hover	{background: #1476cc url(http://www.synowczyk.cal24.pl/mygists/images/icon_edit.png) no-repeat; background-position: center center;}
+a.imglink[name="del"]	{background: #f22424 url(http://www.synowczyk.cal24.pl/mygists/images/icon_remove.png) no-repeat; background-position: center center;}
+a.imglink[name="del"]:hover	{background: #1476cc url(http://www.synowczyk.cal24.pl/mygists/images/icon_remove.png) no-repeat; background-position: center center;}
 a.button						{float: left; margin: 0; padding: 0 10px; height: 38px; line-height: 38px; background: #a519ff; text-align: center; border-radius: 2px; color: #ffffff; text-shadow: none; transition: background .3s; -webkit-transition: background .3s;}
 a.button:hover				{background: #1476cc; cursor: pointer;}
 input[type="submit"]		{float: left; font: normal 18px opensansreg; margin-right: 1px; padding: 0 10px; height: 38px; border: none; border-radius: 2px; background: #a519ff; color: #ffffff; text-shadow: none; transition: background .3s; -webkit-transition: background .3s;}

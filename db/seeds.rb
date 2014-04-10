@@ -6,11 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 50.times do
-  Gist.create(snippet: '
-	void countSort(char *str)
-{
-    // The output character array that will have sorted str
-    char output[strlen(str)];
+  Gist.create(snippet: 'void countSort(char *str) { char output[strlen(str)];
  
     // Create a count array to store count of inidividul characters and
     // initialize count array as 0
